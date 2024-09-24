@@ -1,0 +1,287 @@
+
+C - datatypes
+--
+int a = 10;
+float b = 34.43;
+char
+double
+long
+short
+
+
+Everything in python is counted as object.
+
+python objects
+------
+
+number
+-----
+number can be integer or decimal or octal or hexa.
+
+
+val = 10
+aval = 34.43
+
+
+string
+------
+string is defined in single quotes or double or triple quotes.
+
+
+aname = 'python programming'
+bname = "java programming"
+cname = """unix shell scripting"""
+
+
+
+list ( array in C )
+--------------
+list contains set of elements.
+Elements can be numbers or strings or any combination
+
+alist = [10,20,30,40]
+blist = ["java","walmart","oracle",45,43,4.43,[30,40,40,50]]
+clist = [[10,20],[30,40],[50,60]]
+
+
+
+tuple ( read only , immutable , unchangeable , uneditable)
+------
+tuple contains set of elements.
+Elements can be numbers or strings or any combination
+** elements inside tuple cannot be modified directly **
+atup = (40,450,50,30)
+btup = ("java","walmart","oracle",45,43,4.43,[30,40,40,50])
+
+
+
+dictionary ( json , hashmap , hash , associateaarray)
+--------------------------------
+dictionary contains elements in key:value pairs
+Indexing is NOT allowed in dictionary
+
+syntax:   object = { key:value , key:value , key:value }
+exmaple:   book  = {"chap1":10,"chap2":20 ,"chap3":30 }
+
+
+
+
+set ( venn diagrams)
+----
+set is UNORDERED collection of UNIQUE items of the same type.
+
+aset = {10,10,20,30,30}
+bset = {"python","java","python"}
+
+
+
+conditions
+--------
+
+- simple if
+
+- if else block
+
+- if-elif-elif-elif-elif-else block
+
+
+
+
+level1
+level1
+level1
+if cond:
+    level2
+    level2
+    level2
+level1
+level1
+
+
+function | definition | block | subroutine 
+-----------------------------------------
+- piece of reusable code
+- define once and cal it for multiple times
+
+
+builtin functions ( common for all the objects)   dir(__builtins__)
+----------------------
+print()
+len()
+dir()
+help()
+range()
+type()
+isinstance()
+max()
+min()
+sum()
+
+
+
+type casting functions - converting from one object to another object
+int()
+float()
+list()
+str()
+tuple()
+dict()
+set()
+hex()
+octal()
+
+Display all the built functions and exceptions ?
+-------------------------------------------------
+dir(__builtins__)
+
+
+
+user defined functions
+
+
+operators
+----------
+
+arithmetic operators :  + - *  / 
+
+logical operators:     and  or not
+---------------------------------
+name = "python"
+if len(name) == 6  and name.islower():
+    # do something
+
+
+relational operators :  <   <=   >   >=   == !=
+---------------------
+
+
+assignment operators:
+------------------
+val = 10
+
+val+=1   (or) val = val + 1   
+val-=1   (or) val = val - 1
+
+
+special operators
+----------------
++ : concatenation
+* : repetition operator
+in : check for existence
+as
+
+
+function|submodule|definition|block|subroutine
+
+user defined functions
+---------------------
+In python function body stats with def keyword.
+
+
+different ways of passing arguments:
+
+- fixed arguments
+- keyword arguments
+- default arguments
+- variable length arguments
+
+
+
+file handling
+--------------
+
+txt  ----> flat file
+html
+xlsx
+csv  ----> flat file
+xml ----> flat file
+json ----> flat file
+log ----> flat file
+.conf ----> flat file
+.prop ----> flat file
+.env  ----> flat file
+docx
+jpg
+mpg
+pdf
+mkv
+zip
+rar
+7z
+tar
+tar.gz
+gz
+gif
+mp4
+mp3
+log
+pptx
+xlsx/xls
+
+
+working with flat files (csv log conf prop env  txt ....)
+--------------------
+- core python
+
+
+
+
+working with third party files ( zip xlsx pdf  7z mp4 )
+-------
+- third party library
+
+
+
+
+
+working with flat files (csv log conf prop env  txt ....)
+--------------------
+read (r)
+write ( w)
+append ( a)
+
+syntax of opening file
+----------------------
+object = open(filename,mode)
+
+example
+------
+fobj = open("customers.txt","r")  # file should exist
+
+fobj = open("customers.txt","w")  # If file is not existing.. file will be created
+
+fobj = open("customers.txt","a") # If file is not existing.. file will be created, if file is existing it appends the concatenation
+
+
+
+closing the file
+---------------
+fobj.close()
+
+
+
+read operation
+---------------
+-reading the file line by line
+-fobj.readlines()
+-fobj.read()
+-using csv library(for csv file), json( json file)
+- using pandas library ( mainly for data analysis)
+
+
+exception handling
+-----------------
+There are 2 types of errors
+
+1. syntax error
+
+2. semantic error or compile time error
+
+
+Handling the errors that occurs during runtime is known as exception handling.
+
+try
+except
+else
+finally
+raise
