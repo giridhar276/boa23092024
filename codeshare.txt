@@ -1,0 +1,3179 @@
+
+
+giridhar276@gmail.com
+9550712233
+
+
+
+
+#############################\-
+https://github.com/giridhar276/boa23092024
+############################
+
+https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-8.0.39.0.msi
+
+https://www.7-zip.org/a/7z2408-x64.exe
+
+
+https://survey.zohopublic.com/zs/4OD40a
+
+
+
+
+
+
+
+name = "python programming"
+print(name)
+print("I love",name)
+
+# p   y   t   h   o   n     p   r   o    g  r    a    m   m   i    n  g
+# 0   1   2   3 ..
+#                                                        -4   -3  -2   -1
+# string slicing
+# string[start:stop:step]  # step is incremental index
+print(name[0])
+print(name[5])
+print(name[0:6])
+print(name[8:10])
+print(name[0:18:1])
+print(name[0:18:2])
+print(name[::])  # python programming
+print(name[:])   
+print(name[-1])
+print(name[-4:-1])
+print(name[::-1])  # reverse the string
+
+# string is immutable
+name = "python programming"
+print(name.upper())
+print(name.upper())
+print(name.lower())
+print(name.encode("utf-16"))
+print(name.center(30))
+print(name.center(30,"*"))
+
+print(name.count("p"))
+print(name.count("P"))
+print(name.count("P".lower()))
+print(name.split(" "))  # output will be the list
+print(name.startswith("p"))
+print(name.startswith("q"))
+
+print(name.find("gram")) # if existing it returns the starting index # if not existing .. it returns -1
+print(name.isalnum())
+alist = ["python","language"]
+print(":".join(alist))
+aname = " python  "
+print(len(aname))
+print(len(aname.strip()))
+print(len(aname.lstrip())) # remove the white spaces only at the left side
+print(len(aname.rstrip()))
+
+print(name.replace("python","java"))
+
+name = name.replace("python","java")
+print(name)
+
+
+
+# ASCII :  0-255   ( uppercase,lowercase, number,special characters - english, latin)
+# UTF-8 : 0-65535
+
+
+
+
+
+
+
+# conditions
+# simple if
+if name.isupper():
+    print("String is lower")
+    print("inside if cond")
+    print("still inside if cond")
+
+# if-else
+if name.startswith("p"):
+    print("python programming")
+else:
+    print("some other langauge")
+
+# if-elif-elif-else
+if name.startswith("p"):
+    print("python programming")
+elif name.startswith("j"):
+    print("java programing")
+elif name.startswith("unix"):
+    print("unix programming")
+else:
+    print("some other language")
+    
+    
+    
+
+
+
+
+####################
+# list
+####################
+
+
+alist = [10,20,30,40,50,60,70,80]
+
+#list slicing
+print(alist[0:6:2])
+# list methods
+alist.append(90)
+alist.append(100)
+print('After appending :',alist)
+# list.extend()
+alist.extend([65,45,42,32])
+print("After extending :",alist)
+#list.insert(index,value)
+alist.insert(1,15)
+print("After inserting :",alist)
+#list.pop(index) - remove item with the help of index
+alist.pop(1)  # 1 is the index
+print(alist)
+#alist.remove(value) - value will be removed directly
+alist.remove(30)
+print("After removing :",alist)
+
+# throws error
+#alist.remove(300)
+#print("After removing :",alist)
+
+if 300 in alist:
+    alist.remove(300)
+else:
+    print("Value doesnt exist")
+
+# default is ascending order
+alist.sort()
+print("After sorting :",alist)
+alist.sort(reverse=True)
+print("After sorting :",alist)
+
+# reversing all the elments
+alist.reverse()
+print("After reversing :",alist)
+
+
+
+
+
+####################
+# dictioanary
+###################
+
+
+book = {"chap1":10,"chap2":20,"chap3":30}
+# adding new key-value to dictionary
+book["chap4"] = 40
+book["chap5"] = 50
+print(book)
+
+book["chap1"] = 100
+print(book)
+########################
+# methods
+########################
+# display keys
+print(book.keys())
+
+for key in book.keys():
+    print(key)
+
+for key in book:   # reading keys
+    print(key)
+
+# display values
+print(book.values())
+
+for value in book.values():
+    print(value)
+
+# dislay items
+print(book.items())
+
+for key,value in book.items():
+    print("key :", key)
+    print("value:",value)
+    print("-------------")
+
+
+###
+book.pop("chap1")  # key-value will be removed
+print("After pop :",book)
+
+book.popitem()   # last key-value will be removed
+print("after popitem :",book)
+book.popitem()   # last key-value will be removed
+print("after popitem :",book)
+
+# if key is not existing 
+#print(book["chap9"])
+
+print(book.get("chap9"))  #If key is not existing, returns None
+print(book.get("chap3")) 
+
+if "chap9" in book:
+    print("key found")
+else:
+    print("key not found")
+
+
+book = {"chap1":10,"chap2":20}
+newbook= {"chap3":30,"chap4":40}
+
+#method1
+finalbook = {**book,**newbook}
+print(finalbook)
+
+#method2
+book.update(newbook)
+print("After updating :",book)
+
+
+
+
+
+
+
+# concatenate strings
+aname = "python"
+bname = "programming"
+finalname = aname + bname
+print(finalname)
+
+
+# concatenate lists
+alist = [10,20,30]
+blist = [40,50,60]
+finalist = alist + blist
+print(finalist)
+
+
+# concatenate tuples
+atup = (40,45,50)
+btup = (60,70,80)
+finaltup = atup + btup
+print(finaltup)
+
+
+
+##################################
+
+#################################
+
+
+
+
+
+
+
+
+data = {
+    "glossary": {
+        "title": "example glossary",
+		"GlossDiv": {
+            "title": "S",
+			"GlossList": {
+                "GlossEntry": {
+                    "ID": "SGML",
+					"SortAs": "SGML",
+					"GlossTerm": "Standard Generalized Markup Language",
+					"Acronym": "SGML",
+					"Abbrev": "ISO 8879:1986",
+					"GlossDef": {
+                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
+						"GlossSeeAlso": ["GML", "XML"]
+                    },
+					"GlossSee": "markup"
+                }
+            }
+        }
+    }
+}
+
+
+#Standard Generalized Markup Language
+print(data['glossary']['GlossDiv']['GlossList']['GlossEntry']['GlossTerm'])
+
+
+#XML
+print(data['glossary']['GlossDiv']['GlossList']['GlossEntry']['GlossDef']["GlossSeeAlso"][1])
+
+
+print(xmllist[1])
+
+
+
+
+############################################
+
+
+
+
+
+data = {
+    'Sales': {
+        'North': {
+            'Alice': 'Manager',
+            'Bob': 'Sales Executive',
+            'Eve': 'Sales Coordinator',
+            'John': 'Account Manager'
+        },
+        'South': {
+            'Charlie': 'Sales Executive',
+            'Grace': 'Regional Sales Manager',
+            'Mallory': 'Business Development Associate'
+        },
+        'West': {
+            'Oscar': 'Sales Executive',
+            'Peggy': 'Account Executive',
+            'Victor': 'Territory Sales Manager'
+        }
+    },
+    'Marketing': {
+        'Digital': {
+            'David': 'SEO Specialist',
+            'Hannah': 'Content Strategist',
+            'Irene': 'Social Media Manager'
+        },
+        'Offline': {
+            'Eve': 'Event Coordinator',
+            'Jake': 'Brand Manager',
+            'Liam': 'Public Relations Specialist'
+        },
+        'Research': {
+            'Mia': 'Market Research Analyst',
+            'Noah': 'Customer Insights Manager'
+        }
+    },
+    'IT': {
+        'Infrastructure': {
+            'Quinn': 'Network Engineer',
+            'Riley': 'System Administrator',
+            'Sam': 'Cloud Architect'
+        },
+        'Development': {
+            'Tina': 'Software Engineer',
+            'Uma': 'Backend Developer',
+            'Walter': 'Full Stack Developer'
+        }
+    },
+    'HR': {
+        'Recruitment': {
+            'Yara': 'Recruitment Specialist',
+            'Zane': 'Talent Acquisition Manager',
+            'Nina': 'HR Coordinator'
+        },
+        'Employee Relations': {
+            'Oliver': 'Employee Relations Specialist',
+            'Sophia': 'HR Business Partner'
+        }
+    },
+    'Finance': {
+        'Accounting': {
+            'Xander': 'Accountant',
+            'Yvette': 'Accounts Payable Specialist',
+            'Zara': 'Financial Analyst'
+        },
+        'Audit': {
+            'Luna': 'Internal Auditor',
+            'Mason': 'Compliance Officer'
+        }
+    }
+}
+
+# method1
+print(type(data))
+
+# method2
+print(isinstance(data,dict))
+print(isinstance(data,list))
+
+
+write a program to display the below output:
+
+
+Sales
+-----
+North
+South
+West
+
+
+Marketing
+--------
+Digital
+Offline
+Research
+
+
+IT
+---
+Infrasturcture
+Development
+
+HR
+---
+Recruitment
+Employee Relations
+
+
+
+code:
+
+
+for key in data:
+    print(key)
+    print("-----")
+    for key in data[key]:
+        print(key)
+    print()
+    
+    
+    
+    
+    
+    
+    
+    
+### set methods#####
+
+aset = {10,10,20,20,20,30,30}
+bset = {30,30,30,40,40,40,50}
+
+# Error
+#print(aset[0])   # indexing is applicable only for string, list tuple
+
+# add new item to the set
+aset.add(30)
+print(aset)
+print(bset)
+# add new item to the set
+aset.add(300)
+
+print(aset)
+print(bset)
+print(aset.union(bset))
+print(aset.intersection(bset))
+print(aset.difference(bset))
+print(aset.issubset(bset))
+print(aset.issuperset(bset))
+
+alist = [10,20,10,10,20,30]
+print(set(alist))
+name = "pppythonn"
+print(set(name))
+
+
+
+
+
+
+
+
+
+ import requests
+import json
+# GET All Products
+def get_all_products():
+    response = requests.get("https://fakestoreapi.com/products")
+    print("GET All Products:")
+    data = response.json()
+    for item in data:
+        print(item['title'])
+        print("-----------")
+
+
+get_all_products()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+###############
+
+
+#capture input from keyword
+name = input("Enter any name :")
+print(name)
+
+#range(start,stop,step)
+print(list(range(1,10)))
+print(list(range(1,10,2)))
+print(list(range(2,10,2)))
+
+alist = [10,20,30,40]
+print(sum(alist))
+print(max(alist))
+print(min(alist))
+
+# type() -display type of the object
+print(type(alist))
+
+# isinstance() = validating the type of object
+print(isinstance(alist,list))
+
+#  converting int to binary
+print(bin(10))
+
+# 97 is the ascii value of a
+print(chr(97))
+
+# display all builtin functions and exceptions
+print(dir(__builtins__))
+
+# zip() - combines two lists
+names = ['Alice', 'Bob', 'Charlie']
+ages = [25, 30, 35]
+combined = zip(names, ages)
+print(list(combined)) #[('Alice', 25), ('Bob', 30), ('Charlie', 35)]
+
+
+
+
+
+
+tasks
+-----
+Write a program that removes all duplicate characters from a given string, preserving the order of first appearance.
+
+
+Enter any string: programming
+Output : progamin
+
+Enter any string: aabbcc
+Output : abc
+
+
+
+
+# Input from user
+input_string = input("Enter any string: ")
+
+#programming
+
+result = ""
+
+seen = set()
+
+for char in input_string:
+    if char not in seen:
+        result += char
+        seen.add(char)
+
+# Print the result
+print("Output:", result)
+
+
+########################################################################################################
+
+
+write a program to count the frequency of each item in the name.
+
+Eg:
+
+Enter any string : hello
+
+Output:
+{'h': 1, 'e': 1, 'l': 2, 'o': 1}
+
+
+Enter any string : mississippi
+{'m': 1, 'i': 4, 's': 4, 'p': 2}
+
+
+name = input("Enter any string :")
+countdict = dict()
+chars = list(name)
+for char in set(name):
+    getcount = chars.count(char)
+    countdict[char] = getcount
+print(countdict)
+
+########################################################################################################
+
+write a program to reverse the words in the given sentence
+
+
+Example:
+
+Enter any sentence: Hello World
+olleH dlroW
+
+Enter any sentence: Python is fun
+nohtyP si nuf
+
+
+
+sentence = input("Enter any sentence :")  #python programming
+rwords = list()
+words = sentence.split(" ")               #["python","programming"]
+
+for word in words:
+    reversed_word = word[::-1]
+    rwords.append(reversed_word)
+print(rwords)  # ["nohtyp","gnimmargorp"]
+finalsentence = " ".join(rwords)    #nohtyp gnimmargorp
+print(finalsentence)
+
+########################################################################################################
+
+
+write a program to display the sum of salaries in each department
+
+
+data = {
+    'HR': {
+        'Alice': {'age': 30, 'salary': 50000, 'role': 'Manager', 'years_in_role': 6},
+        'Bob': {'age': 25, 'salary': 40000, 'role': 'Recruiter', 'years_in_role': 3}
+    },
+    'IT': {
+        'Charlie': {'age': 35, 'salary': 70000, 'role': 'Developer', 'years_in_role': 8},
+        'David': {'age': 28, 'salary': 65000, 'role': 'Analyst', 'years_in_role': 2}
+    }
+}
+
+
+
+
+HR 
+----
+total sum of salaries : 90000
+
+
+IT
+-----
+total sum of salaries : 135000
+
+
+
+
+for key,value in data.items():
+    salary = 0
+    for emp,details in value.items():
+        #print(emp,details)
+        salary = salary + details['salary']
+    
+    print(key)
+    print("----")
+    print("total sum of salaries :",salary)
+
+
+########################################################################################################
+
+Given a dictionary where keys are tuples representing a student's ID and name, and values are their respective scores in different subjects, group the data by subject and calculate the highest, lowest, and average scores for each subject.
+
+student_scores = {
+    ('S001', 'Alice'): {'Math': 85, 'Science': 90, 'English': 78},
+    ('S002', 'Bob'): {'Math': 92, 'Science': 88, 'English': 80},
+    ('S003', 'Charlie'): {'Math': 78, 'Science': 85, 'English': 85}
+}
+
+
+output:
+{
+    'Math': {'highest_score': 92, 'lowest_score': 78, 'average_score': 85},
+    'Science': {'highest_score': 90, 'lowest_score': 85, 'average_score': 87.67},
+    'English': {'highest_score': 85, 'lowest_score': 78, 'average_score': 81}
+}
+
+
+########################################################################################################
+
+
+
+
+
+
+
+# fixed arguments
+def display(a,b):
+    print(a,b)
+# user defined funciton
+display(10,20)
+
+
+def display(a,b):
+    c = a + b
+    return c
+# user defined funciton
+total = display(10,20)
+print(total)
+
+# default argument
+def display(a = 0,b = 0,c ="default"):
+    print(a,b,c)
+# user defined funciton
+display()
+display(10)
+display(10,20)
+display(10,20,30)
+
+# keyword arguments
+def display(b,a,c):
+    print(a,b,c)
+display(a= 10 , b=20 , c= 30)
+
+# if any object begings with *  : it is tuple
+# variable length arguments
+def display(*args):
+    print(type(args))
+    for val in args:
+        print(val)
+    #print(sum(args))
+display(10,20,30,40,50,60,70,80,90,100,"unix")
+
+def display(**kwargs):
+    print(kwargs)
+    for key,value in kwargs.items():
+        print(key,value)
+
+display(a= 10 , b=20 , c= 30)
+
+
+
+'''
+# process the data from mysql database
+
+def 1: connect to database
+def 2: define query
+def 3: execute query
+def 4: process
+def 5: display output
+def 6: close connection
+'''
+
+
+
+
+
+
+
+
+
+
+####################################################################################
+# lambda function : lambda is the replacement of single liner function only
+# inline function in c++/java
+# Advantage: function body will be replaced in the calling function
+# syntax:
+#functionname = lambda variables:expression
+
+####################################################################################
+
+
+display = lambda x,y: x + y
+# user defined funciton
+total = display(10,20)
+print(total)
+
+converter = lambda x : int(x)
+value = converter("1")
+print(value)
+
+square = lambda x : x ** 2
+print(square(10))
+
+checkeven = lambda x: x % 2 == 0
+print(checkeven(10))
+
+getsum = lambda *args : sum(args)
+print(getsum(10,20,30,30,40,50,50,60,70))
+
+
+
+
+
+alist = ["unix","python","c"]       
+# [ 4, 6, 1]
+
+# traditional way
+getcount = []
+for val in alist:
+    getcount.append(len(val))
+print(getcount)
+
+
+# when len(input) = len(output)
+#map()
+
+#map(function,iterable)
+alist = ["unix","python","c"]   
+def getcount(x):
+    return  len(x)
+print(list(map(getcount,alist)))
+
+
+# map with lambda
+alist = ["unix","python","c"]   
+getcount = lambda x: len(x)
+print(list(map(getcount,alist)))
+
+
+alist = ["unix","python","c"]   
+print(list(map(lambda x: len(x),alist)))
+
+
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = list(map(lambda x: x**2, numbers))
+print(squared_numbers)  # Output: [1, 4, 9, 16, 25]
+
+
+words = ['hello', 'world', 'python']
+uppercase_words = list(map(lambda x: x.upper(), words))
+print(uppercase_words)
+
+
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+sum_lists = list(map(lambda x, y: x + y, list1, list2))
+print(sum_lists)  # Output: [5, 7, 9]
+
+
+texts = ['  hello  ', ' world ', ' python ']
+stripped_texts = list(map(lambda x: x.strip(), texts))
+print(stripped_texts)  # Output: ['hello', 'world', 'python']
+
+
+
+
+
+
+###############
+## filter
+###############
+alist = ["unix","python","c","perl"]  
+print(list(map(lambda x: len(x)==4, alist)))
+print(list(filter(lambda x: len(x)==4, alist)))
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# Filter even numbers
+
+
+even_numbers = filter(lambda x: x % 2 == 0, numbers)
+print(even_numbers)
+
+
+
+## adding 10 to the positive numbers only
+numbers = [-5, 3, -1, 7, -10, 2]
+# Filter positive numbers
+positive_numbers = filter(lambda x: x > 0, numbers)
+# Map to add 10 to each positive number
+increased_numbers = map(lambda x: x + 10, positive_numbers)
+
+# Convert to list and print the result
+result = list(increased_numbers)
+print(result)  # Output: [13, 17, 12]
+
+
+
+
+
+
+
+
+
+
+
+
+
+# processing customer reviews for analysis
+'''
+You have a list of customer reviews with their ratings, and you want to perform the following tasks:
+
+Filter out only the reviews with a rating of 4 or higher (positive reviews).
+Extract the length of each positive review.
+Generate a summary by categorizing the reviews based on their length (short, medium, long).
+
+
+'''
+
+
+# List of customer reviews represented as (review_text, rating)
+reviews = [
+    ("Great product, highly recommend!", 5),
+    ("Not what I expected, quality is poor.", 2),
+    ("Decent quality for the price.", 4),
+    ("Amazing! Exceeded my expectations.", 5),
+    ("Just okay, nothing special.", 3),
+    ("Would buy again, loved it!", 4),
+    ("Terrible experience, will not buy again.", 1)
+]
+
+# Step 1: Filter out reviews with a rating of 4 or higher
+positive_reviews = filter(lambda x: x[1] >= 4, reviews)
+
+# Step 2: Map to calculate the length of each positive review text
+review_lengths = map(lambda x: (x[0], len(x[0])), positive_reviews)
+
+# Step 3: Categorize each review as 'short', 'medium', or 'long' based on its length
+def categorize_review(review):
+    text, length = review
+    if length < 30:
+        category = 'short'
+    elif 30 <= length < 50:
+        category = 'medium'
+    else:
+        category = 'long'
+    return (text, category)
+
+categorized_reviews = map(categorize_review, review_lengths)
+
+# Convert to a list to see the final result
+result = list(categorized_reviews)
+
+# Print the categorized reviews
+print("Categorized positive reviews based on their length:")
+for review, category in result:
+    print(f"Review: \"{review}\", Category: {category}")
+
+# Output:
+# Categorized positive reviews based on their length:
+# Review: "Great product, highly recommend!", Category: medium
+# Review: "Decent quality for the price.", Category: short
+# Review: "Amazing! Exceeded my expectations.", Category: medium
+# Review: "Would buy again, loved it!", Category: short
+
+
+
+
+
+
+fobj = open("customers.txt","a")
+fobj.write("oracle\n")
+fobj.write("microsoft\n")
+fobj.writelines(["google","salesforce"])
+fobj.close()
+
+
+
+
+
+
+
+
+#2
+fnum = open("numbers.txt","w")
+for val in range(1,10):
+    fnum.write(val + "\n")
+fnum.close()
+
+
+
+
+# traditional way
+# regular way
+fobj = open("customers1.txt","w")
+fobj.write("oracle\n")
+fobj.write("microsoft\n")
+fobj.writelines(["google","salesforce"])
+fobj.close()
+
+
+# pythonic way
+# context manager
+# if any line starts using with keyword.. we call it context manager
+# Advantage: file gets closed automatically
+
+with open("customers1.txt","w") as fobj:
+    fobj.write("oracle\n")
+    fobj.write("microsoft\n")
+    fobj.writelines(["google","salesforce"])
+
+
+
+
+
+
+
+
+
+## reading the file line by line - preferred
+# fobj acts like cursor or pointer or reference
+with open("customers.txt","r") as fobj:
+    for line in fobj:
+        print(line.strip())
+
+# read the file using fobj.readlines()
+with open("customers.txt","r") as fobj:
+    print(fobj.readlines())
+
+# using fobj.read() ----> string
+# not suggested for larger files
+# generally used for reading config of .env files
+with open("customers.txt","r") as fobj:
+    print(fobj.read())
+
+# using csv library
+import csv    #,on_bad_lines="skip"
+with open("customers.txt","r") as fobj:
+    # converting file object to csv object
+    reader = csv.reader(fobj)
+    print(reader)
+    for line in reader:
+        #each line is automatically converted to list
+        print(line)  
+
+# using pandas
+import pandas 
+df = pandas.read_csv("customers.txt")
+print(df)
+
+
+
+
+import json
+with open("sales.json") as fobj:
+    # converting file object to json object
+    data = json.load(fobj)
+    for key,value in data.items():
+        print(key,value)
+
+
+
+
+
+
+
+try:
+    with open("customer111s.txt","r") as fobj:
+        for line in fobj:
+            print(line.strip())
+except Exception as err:
+    print("system generated error :",err)
+    print("File not found.. please check")
+
+
+
+
+
+
+
+
+
+
+import sys
+try:
+    with open("customers1111.txt","r") as fobj:
+        for line in fobj:
+            print(line.strip())
+    output = "hello" + "hi"
+
+except TypeError as err:
+    print(err)
+    print("invalid operation")
+    print(sys.exc_info())
+except ValueError as err:
+    print("Invalid input")
+    print(err)
+except FileNotFoundError as err:
+
+
+
+    print("system generated error :",err)
+    print("File not found.. please check")
+except (IndexError,KeyError) as err:
+    print("Invalid index or keyerror provided")
+except Exception as err:
+    print("Unknown exception found",err)
+    print(sys.exc_info())
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+import sys
+import logging
+
+# Configure logging
+logging.basicConfig(
+    filename='error_log.log',  # Log file name
+    level=logging.ERROR,       # Log level (ERROR captures all errors)
+    format='%(asctime)s - %(levelname)s - %(message)s'  # Log format
+)
+
+try:
+    with open("customers.txt", "r") as fobj:
+        for line in fobj:
+            print(line.strip())
+    output = "hello" + 4      # This will raise a TypeError
+    
+except TypeError as err:
+    logging.error("TypeError: {}".format(err))
+    print("Invalid operation")  # Still print a user-friendly message if needed
+except ValueError as err:
+    logging.error("ValueError: {}".format(err))
+    print("Invalid input")
+except FileNotFoundError as err:
+    logging.error("FileNotFoundError: {}".format(err))
+    print("File not found.. please check")
+except (IndexError, KeyError) as err:
+    logging.error("IndexError or KeyError: {}".format(err))
+    print("Invalid index or key provided")
+except Exception as err:
+    logging.error("Unknown exception found: %s", err)
+    logging.error("Exception info: %s", sys.exc_info())
+    print("An unknown error occurred")
+
+# The error_log.log file will now contain all the logged errors
+
+
+
+
+
+
+
+'''
+
+Given a dictionary where keys are tuples representing a student's ID and name, and values are their respective scores in different subjects, group the data by subject and calculate the highest, lowest, and average scores for each subject.
+
+student_scores = {
+    ('S001', 'Alice'): {'Math': 85, 'Science': 90, 'English': 78},
+    ('S002', 'Bob'): {'Math': 92, 'Science': 88, 'English': 80},
+    ('S003', 'Charlie'): {'Math': 78, 'Science': 85, 'English': 85}
+}
+
+
+output:
+{
+    'Math': {'highest_score': 92, 'lowest_score': 78, 'average_score': 85},
+    'Science': {'highest_score': 90, 'lowest_score': 85, 'average_score': 87.67},
+    'English': {'highest_score': 85, 'lowest_score': 78, 'average_score': 81}
+}
+
+'''
+
+
+student_scores = {
+    ('S001', 'Alice'): {'Math': 85, 'Science': 90, 'English': 78},
+    ('S002', 'Bob'): {'Math': 92, 'Science': 88, 'English': 80},
+    ('S003', 'Charlie'): {'Math': 78, 'Science': 85, 'English': 85}
+}
+
+# Dictionary to hold the grouped data by subject
+subject_scores = {}
+
+# Iterate through each student's scores
+for student, scores in student_scores.items():
+    # Iterate through each subject and its score
+    for subject, score in scores.items():
+        # If the subject is not yet in the subject_scores, add it with an empty list
+        if subject not in subject_scores:
+            subject_scores[subject] = []
+        # Append the score to the subject's list
+        subject_scores[subject].append(score)
+
+# Dictionary to hold the final results with highest, lowest, and average scores
+result = {}
+
+# Calculate the required values for each subject
+for subject, scores in subject_scores.items():
+    highest_score = max(scores)
+    lowest_score = min(scores)
+    average_score = round(sum(scores) / len(scores), 2)  # Rounded to 2 decimal places
+    result[subject] = {
+        'highest_score': highest_score,
+        'lowest_score': lowest_score,
+        'average_score': average_score
+    }
+
+# Print the result
+print(result)
+
+
+
+
+#####################################
+
+
+import sys
+try:
+    fobj =open("customers.txt","r")
+except Exception as err:
+    print("file not found")
+    print(sys.exc_info())
+else:
+    try:
+        for line in fobj:
+            print(line)
+    except TypeError as err:
+        print(err)
+finally:
+    fobj.close()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+# download the files.zip ,extract and copy all the files to your local program
+    
+https://github.com/giridhar276/boa23092024/raw/refs/heads/main/files.zip
+
+
+########################################################################################
+
+
+write a program to display all the unique workclasses from the employees.csv file
+
+
+########################################################################################
+
+write a program to display the below count:
+
+
+Total male employees : xxxx
+Total female employees : xxxx
+
+########################################################################################
+
+
+
+
+
+import os
+import csv
+import sys
+workset = set()
+try:
+    #with open("C:\\Admin\\Desktop\\programs\\employees.csv","r") as fobj:
+    #with open(r"C:\Admin\Desktop\programs\employees.csv","r") as fobj:   # raw string
+    #with open("C:/Admin/Desktop/programs/employees.csv","r") as fobj:
+    filepath = "./files/employees.csv"
+    if os.path.isfile(filepath) and os.path.getsize(filepath) > 0:
+        with open(filepath,"r") as fobj:
+            header = fobj.readline()
+            reader = csv.reader(fobj)
+            for line in reader:
+                workset.add(line[1])
+            #display output
+            for item in workset:
+                print(item.strip())
+
+    else:
+        print("file is not found")
+        sys.exit(0)
+except Exception as err:
+    print(err)
+
+
+
+
+
+
+
+
+
+
+
+import os
+import csv
+import sys
+try:
+    malecount = 0
+    femalecount =0
+    filepath = "./files/employees.csv"
+    if os.path.isfile(filepath) and os.path.getsize(filepath) > 0:
+        with open(filepath,"r") as fobj:
+            header = fobj.readline()
+            reader = csv.reader(fobj)
+            for line in reader:
+                gender = line[9].strip()
+                if gender == "Male":
+                    malecount+=1
+                elif gender == "Female":
+                    femalecount+=1
+    print("Total male employees :",malecount)
+    print("Total female employees :",femalecount)
+
+except Exception as err:
+    print(err)
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+import fileinput
+
+filepath = "./files/employees.csv"
+target = "Bachelors"
+replacement = "Youngsters"
+
+
+with fileinput.FileInput(filepath,inplace=True,backup=".bkp") as file:
+    for line in file:
+        print(line.replace(target,replacement),end="")
+        
+        
+        
+        
+        
+        
+        
+        
+employees.xml
+--------------
+      
+<employees>
+    <employee>
+        <id>101</id>
+        <name>John Doe</name>
+        <department>Engineering</department>
+    </employee>
+    <employee>
+        <id>102</id>
+        <name>Jane Smith</name>
+        <department>Marketing</department>
+    </employee>
+    <employee>
+        <id>103</id>
+        <name>Emily Johnson</name>
+        <department>Finance</department>
+    </employee>
+</employees>
+        
+    
+    
+    
+    
+    
+display all the employees
+--------------------------
+import xml.etree.ElementTree as et
+
+
+filename = "employees.xml"
+tree = et.parse(filename)
+
+root = tree.getroot()
+print(root)
+
+for employee in root.findall("employee"):
+    id = employee.find("id").text
+    name = employee.find("name").text
+    department = employee.find("department").text
+    print("Emp iD :",id)
+    print("Name   :",name)
+    print("Department :",department)
+    print("--------------")
+    
+    
+
+find for the particular employee
+------------------------------------
+import xml.etree.ElementTree as et
+
+
+filename = "employees.xml"
+tree = et.parse(filename)
+
+root = tree.getroot()
+print(root)
+
+for employee in root.findall("employee"):
+    if int(employee.find("id").text) == 101:
+        name = employee.find('name').text
+        print(name)
+
+
+
+
+tasks
+---------
+
+
+###############################################################################################
+Write a script that lists all files and directories in the current working directory line by line.
+
+
+import os
+for file in os.listdir():
+    if os.path.isfile(file):
+        print(file,"is a file")
+    if os.path.isdir(file):
+        print(file,"is a directory")
+
+
+import glob
+files = glob.glob("*.py")
+for file in files:
+    print(file)
+
+###############################################################################################
+
+Create a new directory called "test_directory". After creating it, remove the directory.
+
+
+import os
+
+dirname = "temp_directory"
+if not os.path.isdir(dirname):
+    os.mkdir(dirname)
+
+
+#if os.path.isdir(dirname):
+#    os.rmdir(dirname)
+
+
+###############################################################################################
+
+write a script to create 10 directories in the current directory as below.
+
+dir1
+dir2
+dir3
+dir4
+..
+..
+dir10
+
+
+import os
+for val in range(1,11):
+    dirname = "dir" + str(val)
+    os.mkdir(dirname)
+
+###############################################################################################
+
+'''write a script to perform the below operations :
+
+1. display current working directory
+2. display login name
+3. display all environment variables
+4. display today's date ( timestamp )
+5. display sep months calendar
+6. display all .py files and its size in bytes
+7. display the modified time of employees.csv file
+8. display current process id
+9. set an environment variables. ( Eg.    TEST_PATH = "C:/Users/Admin/")
+10. Lock and unlock a file using os.open and os.close
+11. Retrieve the current system's load average.
+12. display python version
+'''
+
+
+
+import os
+import time
+import datetime,dateutil,pytz
+import calendar
+import sys
+import sysconfig
+
+print(os.getcwd())
+
+os.chdir("/Users/giridharsripathi/Documents/training")
+
+print(os.getcwd())
+
+#os.chdir("/Users/giridharsripathi/Documents/training/boa/programs")
+
+# display login
+print(os.getlogin())
+
+# display all env varaibles
+#print(os.environ)
+
+for key,value in os.environ.items():
+    print(key)
+    print(value)
+    print("-------------------")
+
+# display todays timestamp
+print(time.localtime())
+print(datetime.datetime.now())
+print(datetime.date.today())
+print(time.time())
+
+print(datetime.datetime.fromtimestamp(time.time()))
+
+# calendar operations
+print(calendar.calendar(2024))
+print(calendar.month(2024,9))
+
+# display files and its size
+for file in os.listdir():
+    print(file.ljust(20),os.path.getsize(file),"bytes")
+
+
+# display  modified time of thefile
+filename ="employees.csv"
+
+modifiedtime = os.path.getmtime(filename)
+print(modifiedtime)
+print(datetime.datetime.fromtimestamp(modifiedtime))
+
+# display process id
+print(os.getpid())
+
+
+# creating env varabile
+os.environ["MY_ENV_VAR"] = "test"
+
+for key,value in os.environ.items():
+    print(key)
+    print(value)
+    print("-------------------")
+
+
+
+# lock and unlock a file
+import os
+descriptor = os.open("employees.csv",os.O_RDWR)
+## file operations
+os.close(descriptor)
+
+
+# system load avg
+print(os.getloadavg())
+
+
+
+# python version
+print(sys.version)
+print(sys.version_info)
+print(sysconfig.get_python_version())
+
+###############################################################################################
+
+write a script to display the below information ( psutil library)
+
+1. CPU Usage
+2. Memory info ( total memory, available, used)
+3. process info
+4. disk partitions
+5. network statistics
+
+
+###############################################################################################
+
+
+write a script to perform the below operations  ( random library)
+
+1. genrate random integer between 400 to 500
+2. create a list ( Eg.  alist = [45,23,77,32,42,32,8,76,34,6,23,45,7]) and shuffle the list
+3. generate a random password of 8 characters containing uppercase, lowercase, and digits.
+
+
+###############################################################################################
+
+
+write a script that takes a birth date in the format YYYY-MM-DD and returns the current age.
+
+
+###############################################################################################
+
+before working on below tasks: please refer collections library and examples on it
+
+Write a function that takes a list of elements and returns a dictionary with the count of each element ( use using collections.Counter)
+
+###############################################################################################
+
+Write a script to create an ordered dictionary and demonstrate that it maintains the insertion order.
+
+###############################################################################################
+
+
+create two files as below: ( filecmp library)
+
+file1.txt
+--------
+microsoft
+oracle
+google
+boa
+tcs
+
+file2.txt
+------
+oracle
+google
+jpmc
+accenture
+servicenow
+
+Write a script that compares two text files file1.txt and file2.txt and returns whether they are identical or not.
+
+
+
+import filecmp
+filecmp.
+# File paths
+file1 = 'file1.txt'
+file2 = 'file2.txt'
+
+# shallow=False : deep comparision , compare 2 files byte by byte
+# even though the file size and modification timestamp are same.. it compare byte to byte
+
+# shallow = True : if file size and modificatio time are same. it assumes fiels are identifical without checking the content
+
+
+# Compare the files
+are_identical = filecmp.cmp(file1, file2, shallow=False)
+
+# Print the result
+if are_identical:
+    print("The files are identical.")
+else:
+    print("The files are not identical.")
+
+
+
+###############################################################################################
+
+create two directories in your current directoy: ( filecmp library)
+
+mydir1 :  copy few files to this directory
+mydir2:   copy few files to this directory
+
+
+Create a script that compares two directories mydir1 and mydir2 and display the below:
+
+files present in only mydir1
+
+files present in only mydir2
+
+files common in both directories
+
+
+
+
+
+
+import filecmp
+
+# Directories to compare
+dir1 = 'mydir1'
+dir2 = 'mydir2'
+
+# Compare the directories
+comparison = filecmp.dircmp(dir1, dir2)
+
+# Files only in mydir1
+print("Files only in mydir1:")
+for file in comparison.left_only:
+    print(f"- {file}")
+
+# Files only in mydir2
+print("\nFiles only in mydir2:")
+for file in comparison.right_only:
+    print(f"- {file}")
+
+# Files common to both directories
+print("\nFiles common in both directories:")
+for file in comparison.common_files:
+    print(f"- {file}")
+
+
+
+###############################################################################################
+
+
+write a program to read https://www.bankofamerica.com/  webpage and display all the URLs listed in the home page.
+
+Output:
+https://www.bankofamerica.com/#
+https://www.bankofamerica.com/smallbusiness
+https://www.ml.com/wealthmanagement.html
+https://www.bankofamerica.com/credit-cards/
+..
+..
+..
+
+
+
+
+import requests
+from bs4 import BeautifulSoup
+
+url = "https://www.bankofamerica.com/"
+response = requests.get(url,verify=False)
+
+if response.status_code == 200:
+    content = response.text
+    soup = BeautifulSoup(content, 'html.parser')
+    for link in soup.find_all('a'):
+        url =link.get('href')
+        print(url)
+
+
+
+###############################################################################################
+
+
+import smtplib
+import ssl
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+
+# Define the SMTP server credentials
+smtp_server = "smtp.gmail.com"
+port = 587  # For TLS
+sender_email = "your_email@gmail.com"
+password = "your_password"  # Use App Password if 2FA is enabled
+
+# Define the recipient and email content
+recipient_email = "recipient@example.com"
+subject = "Auto-generated Email"
+body = """
+Hello,
+
+This is an auto-generated email sent using a Python script.
+
+Best regards,
+Your Python Script
+"""
+
+# Create a MIMEText message
+message = MIMEMultipart()
+message["From"] = sender_email
+message["To"] = recipient_email
+message["Subject"] = subject
+
+# Attach the email body to the message
+message.attach(MIMEText(body, "plain"))
+
+# Securely connect to the SMTP server and send the email
+try:
+    # Create a secure SSL context
+    context = ssl.create_default_context()
+
+    # Connect to the SMTP server using the TLS port
+    with smtplib.SMTP(smtp_server, port) as server:
+        server.starttls(context=context)  # Secure the connection
+        server.login(sender_email, password)  # Log in to the server
+        server.sendmail(sender_email, recipient_email, message.as_string())  # Send the email
+        print("Email sent successfully!")
+except Exception as e:
+    print(f"Error sending email: {e}")
+
+
+###############################################################################################
+
+
+##################################################################
+
+
+####################################
+######## frequently used builtin libraries #####
+###################################
+
+################################### libraries #############################
+
+os         : os level activities
+math       : mathematical operations
+sys        :  sys and python config data
+shutil     : copy,move, rmtree  etc
+urllib     : read the web, downloading the files
+logging    : logging all the events
+smtplib    : sending the mails
+ftplib     : performing ftp operations
+sysconfig  :  sys and python config data
+zipfile    : create/extract the zip files
+rarfile    : create/extract the rar files
+cryptopgraphy : encrypting and decrypting the data or files
+tarfile    : create/extract the tar files
+filecmp    : comparing files or directories
+sqlite3    : python default database
+csv        : reading/writing csv files
+xml        : reading/writing xml files
+calendar   : display month,year calendar info
+datetime   : working with date n time
+time       : working with date n time
+fractions  : working with decimal values
+glob       : display all the files
+heapq      : more of array operations ( getting largest among list )
+subprocess : executing system commands in python (  subprocess.getoutput("ls -ltr")
+pdb        : python debugger
+platform   : platform information
+random     : random operations ( shuffling , random digit ... )
+re         : grep + awk + sed
+socket     : networking programming
+stat       : stats of the file
+statistics : basic statistics
+telnetlib  : accessing remote servers 
+
+
+###############################################################################################
+
+mysql steps
+-------------------
+
+
+
+
+
+display all the datbases
+---------------------------
+show databases ;
+
+
+create database
+-------------------
+create database empdb;
+
+
+access your database
+-------------------
+use empdb;
+
+
+display all tables
+--------------------
+show tables;
+
+
+create table
+---------------
+create table employees ( workclass  varchar(100),  education varchar(100),  status varchar(100));
+
+
+insert records
+---------------
+insert into employees values('Private','Mtech','married');
+insert into employees values('Public','Btech','unmarried');
+insert into employees values('private','Phd','professor');
+
+
+display all the records
+-----------------------
+select * from employees;
+
+
+
+
+
+step1: Connecting to database
+
+step2: define query
+
+step3 : executed query
+
+step4: fetch the output/process the data
+
+step5: disconnect
+
+
+
+
+pip install streamlit
+
+
+
+
+
+
+
+import pymysql
+try:
+    #step1:
+    conn = pymysql.connect(host="localhost",port=3306,user="root",password="Admin@123",database="empdb")
+    print(conn)
+    #step2
+    cursor = conn.cursor()
+    query = "select * from employees"
+    #step3
+    cursor.execute(query)
+    #step4
+    for record in cursor.fetchall():
+        print("workclass",record[0])
+        print("qualification :",record[1])
+        print("--------------------")
+    #step5
+    conn.close()
+
+except pymysql.err.IntegrityError as err:
+    print(err)
+except pymysql.err.DataError as err:
+    print(err)
+except Exception as err:
+    print(err)
+
+
+
+
+
+
+
+
+
+
+
+
+import pymysql
+import streamlit as st
+
+st.title("Employee details")
+
+try:
+    #step1:
+    conn = pymysql.connect(host="localhost",port=3306,user="root",password="Admin@123")
+    print(conn)
+    st.success("connected to database")
+    #step2
+    cursor = conn.cursor()
+
+
+    query = "select * from empdb.employees;"
+    #step3
+    cursor.execute(query)
+    #step4
+    for record in cursor.fetchall():
+        #print("workclass",record[0])
+        #print("qualification :",record[1])
+        #print("--------------------")
+        st.write("workclass :{}".format(record[0]))
+        st.write("qualication :{}".format(record[1]))
+        st.write("status :{}".format(record[2]))
+    #step5
+
+
+  
+    conn.close()
+
+except pymysql.err.IntegrityError as err:
+    #print(err)
+    st.error("INtegrity error")
+except pymysql.err.DataError as err:
+    print(err)
+    st.error("dataerror")
+except Exception as err:
+    print(err)
+
+
+# python web framework : flask , django, 
+
+
+
+
+
+
+
+
+write a program to read employees.csv and insert all the records to the database.
+- validations whereever it is needed
+- use try- except blocks
+
+
+
+
+
+
+
+
+
+
+
+
+
+import pymysql
+import csv
+import os
+try:
+    #step1:
+    conn = pymysql.connect(host="localhost",port=3306,user="root",password="Admin@123")
+    print(conn)
+    #step2
+    cursor = conn.cursor()
+    count = 0
+    filename = "employees.csv"
+    if os.path.isfile(filename) and os.path.getsize(filename) > 0:
+        with open(filename) as fobj:
+            header = fobj.readline()
+            reader = csv.reader(fobj)
+            for line in reader:
+                query = "insert into empdb.employees values('{}','{}','{}')".format(line[1],line[3],line[5])
+                cursor.execute(query)
+                count = count + 1
+        print(count,"records inserted")
+    else:
+        print("file not found")
+    conn.commit()
+    conn.close()
+
+except pymysql.err.IntegrityError as err:
+    print(err)
+except pymysql.err.DataError as err:
+    print(err)
+except Exception as err:
+    print(err)
+
+
+# python web framework : flask , django, 
+
+
+
+
+
+
+
+
+
+oopdemo.py
+----------------
+
+class Employee():
+    def getEmployee(self,name,age,city):
+        self.name = name
+        self.age = age
+        self.city = city
+    def displayEmployee(self):
+        print(self.name)
+        print(self.age)
+        print(self.city)
+
+# if this program gets executed directly only below condition becomes true
+# if this program is imported to other program the below condition becomes
+if __name__ == "__main__":
+    emp1 = Employee()
+    emp1.getEmployee('Syam',32,'Hyd')
+    emp1.displayEmployee()
+
+    emp2 = Employee()
+    emp2.getEmployee('rena',23,'mumbai')
+    emp2.displayEmployee()
+    
+    
+    
+
+myprogram.py
+------------
+import oopdemo
+
+
+myobj = oopdemo.Employee()      
+myobj.getEmployee('ram',12,'hyd')
+myobj.displayEmployee()
+
+
+
+
+
+
+
+
+
+class Employee():
+    # constructor
+    # constructor is invoked automatically when the object is created
+    def __init__(self,name,age,city):
+        self.name = name
+        self.age = age
+        self.city = city
+    def displayEmployee(self):
+        print(self.name)
+        print(self.age)
+        print(self.city)
+
+
+#
+emp1 = Employee('Syam',32,'Hyd')
+emp1.displayEmployee()
+
+emp2 = Employee('rena',23,'mumbai')
+emp2.displayEmployee()
+
+
+
+
+pip3 install python-dotenv
+
+
+
+
+
+.env
+------
+host=localhost
+port=3306
+user=root
+password=Admin@123
+
+
+
+
+
+
+class4.py
+--------
+
+from  dotenv import load_dotenv
+import os
+load_dotenv()
+
+class Employee():
+    # constructor
+    # constructor is invoked automatically when the object is created
+    def __init__(self,name,age,city):
+        self.name = name
+        self.age = age
+        self.city = city
+        self.host = os.getenv("host")
+    def displayEmployee(self):
+        print(self.name)
+        print(self.age)
+        print(self.city)
+        print(self.host)
+
+#
+emp1 = Employee('rao',45,'mum')
+emp1.displayEmployee()
+
+emp2 = Employee('rena',23,'mumbai')
+emp2.displayEmployee()
+
+
+###############################
+
+
+write a object oriented program to read employees.csv and insert all the records to the database
+
+
+
+
+
+
+
+
+
+
+
+
+
+import pymysql
+import csv
+import os
+from  dotenv import load_dotenv
+import os
+load_dotenv()
+
+
+class DBOperations:
+    ###
+    def __init__(self,database):
+        self.host=os.getenv("host")
+        self.port = int(os.getenv("port"))
+        self.user = os.getenv("user")
+        self.password = os.getenv("password")
+        self.database = database
+    def connectDB(self):
+        self.conn = pymysql.connect(host=self.host,port=self.port,user=self.user,password=self.password)
+    def createCursor(self):
+        self.cursor = self.conn.cursor()
+    def processData(self):
+        with open("employees.csv","r") as self.fobj:
+            self.reader = csv.reader(self.fobj)
+            for record in self.reader:
+                workclass = record[1]
+                qualification = record[3]
+                status = record[5]
+
+                query = "insert into {}.employees values('{}','{}','{}')".format(self.database,workclass,qualification,status)
+                self.cursor.execute(query)
+    def closeConnection(self):
+        self.conn.commit()
+        self.conn.close()
+
+
+if __name__ == "__main__":
+    db = DBOperations("empdb")
+    db.connectDB()
+    db.createCursor()
+    db.processData()
+    db.closeConnection()
+
+
+
+
+
+
+
+
+
+class Student:
+    'Common base class for all student'
+    studentCount = 0  ## class attribute  # accessible with all the objects
+    def __init__(self,name,fee,age):
+        self.name = name
+        self.fee = fee
+        self.age = age
+        Student.studentCount += 1
+
+    def displayCount(self): 
+        print("Total Students %d" % Student.studentCount )
+
+    def displayStudent(self):
+        print("Name : ", self.name , ", Fee : ", self.fee)
+
+    def displayAge(self):
+        print("Name : ", self.name , ",Age: ", self.age )
+
+
+student1 = Student("Ebby",2500,17)
+student1.displayStudent()
+student1.displayAge()
+
+student2 = Student("Ebby",2500,17)
+student2.displayStudent()
+student2.displayAge()
+student3 = Student("Ebby",2500,17)
+student3.displayStudent()
+student3.displayAge()
+print(Student.studentCount)
+
+
+
+
+
+
+
+
+
+
+
+
+class MethodNotAllowed(Exception):
+    pass
+class Bike:
+    count = 0
+    num_wheels = 2
+
+    def __init__(self, description, condition, sale_price, cost=0):
+        self.description = description
+        self.condition = condition
+        self.sale_price = sale_price
+        self.cost = cost
+        self.sold = False
+        Bike.count += 1
+
+    def __del__(self):
+        Bike.count -= 1
+
+    def update_sale_price(self, sale_price):
+        if self.sold:
+            raise MethodNotAllowed('Bike has already been sold')
+        self.sale_price = sale_price
+
+    def sell(self):
+        """
+        Mark as sold and determine the profit received from selling the bike
+        """
+        self.sold = True
+        profit = self.sale_price - self.cost
+        return profit
+
+    def service(self, spent, sale_price=None, condition=None):
+        """
+        Service the bike and update attributes
+        """
+        self.cost += spent
+        if sale_price:
+            self.update_sale_price(sale_price)
+        if self.condition:
+            self.condition = condition
+
+# will be always True if we code this executed directly
+# if this program is imported to some other program , below condition becomes False
+if __name__ == '__main__':
+    bike1 = Bike('Univega Alpina, orange', 'OKAY', sale_price=500, cost=100)
+    bike2 = Bike('Raleigh Talus 2', 'BAD', sale_price=20)
+
+    # All print 2
+    print(bike2.num_wheels)
+    print(bike1.num_wheels)
+    print(Bike.num_wheels)
+
+    print(Bike.count)  # 2
+
+    del bike1
+
+
+
+
+
+
+
+
+
+#####################
+
+class Call:
+    def __init__(self, id, name, phone_number, time_of_call, reason_for_call):
+        self.id = id
+        self.name = name
+        self.phone_number = phone_number
+        self.time_of_call = time_of_call
+        self.reason_for_call = reason_for_call
+
+    def display(self):
+        print("ID:", self.id)
+        print("Name:", self.name)
+        print("Phone Number:", self.phone_number)
+        print("Time of call (in HHMM format):", self.time_of_call)
+        print("Reason for call:", self.reason_for_call)
+
+class CallCenter:
+    def __init__(self):
+        self.calls = []
+        self.queue_size = 0
+
+    # def add(self, id, name, phone_number, time_of_call, reason_for_call):
+    #     self.calls.append(Call(id, name, phone_number, time_of_call, reason_for_call))
+
+    def add(self, call):
+        call_list = []
+        call_list.append(call.id)
+        call_list.append(call.name)
+        call_list.append(call.phone_number)
+        call_list.append(call.time_of_call)
+        call_list.append(call.reason_for_call)
+
+        self.calls.append(call_list)
+
+        self.queue_size += 1
+        return self
+
+    def remove(self):
+        self.calls.pop(0)
+        self.queue_size -= 1
+        return self
+
+    def info(self):
+        print('Length of queue:', self.queue_size)
+        for value in self.calls:
+            print("Name:", value[1])
+            print("Phone Number:", value[2])
+
+call1 = Call(1, 'Ash', 123, 1234, 'thanks')
+call1.display()
+call_center = CallCenter()
+call_center.add(call1)
+call_center.info()
+# print call_center.calls
+
+#############################
+
+
+
+
+
+
+class Patient:
+    def __init__(self, id, name, allergies, bed_number=None):
+        self.id = id
+        self.name = name
+        self.allergies = allergies
+        self.bed_number = bed_number
+
+class Hospital:
+    def __init__(self, name, capacity):
+        self.name = name
+        self.patients = []
+        self.capacity = capacity
+        
+
+    def add(self, patient):
+        if len(self.patients) >= self.capacity:
+            print('Sorry! The Hospital is full!')
+        else:
+            patient_dictionary = {
+            'ID': patient.id,
+            'Name': patient.name,
+            'Allergies': patient.allergies,
+            'Bed Number': patient.bed_number
+            }
+            self.patients.append(patient_dictionary)
+            print ('{} has been admitted.'.format(patient.name))
+
+    def discharge(self, name):
+        for value in self.patients:
+            if value['Name'] == name:
+                value['Bed Number'] = None
+                self.patients.remove(value)
+
+patient1 = Patient(1, 'Ash', 'Wool', 1)
+patient2 = Patient(1, 'Sterling', 'Chocolate', 3)
+patient3 = Patient(1, 'Alish', 'Puppies', 7)
+patient4 = Patient(1, 'Andre', 'Kitties', 9)
+hospital = Hospital('kings Hospital', 3)
+hospital.add(patient1)
+hospital.add(patient2)
+hospital.add(patient3)
+hospital.add(patient4)
+hospital.discharge('Alish')
+hospital.discharge('Sterling')
+hospital.add(patient4)
+
+
+
+
+
+
+
+
+
+
+class Date:   # Parent # Base # Super
+    def get_date(self):
+        print("2016-05-14")
+
+
+
+class Time(Date): # Child # inherited #subclass
+    def get_time(self):
+        print("08:00:00")
+
+
+
+# Creating an instance from `Date`
+dt = Date()
+dt.get_date()  # Accesing the `get_date()` method of `Date`
+print("--------")
+
+
+# Creating an instance from `Time`.
+tm = Time()
+tm.get_time()   # Accessing the `get_time()` method from `Time`.
+# Accessing the `get_date() which is defined in the parent class `Date`.
+tm.get_date()
+
+
+
+
+
+
+
+
+###########################################
+
+class SampleClass:
+    globalNumVariable = 3691
+    globalStringVariable = "Some string.."
+    b = 987 # b is a global variable
+    _b = 654 # can be called as protected
+    __b = 321 # private
+    # constrcutor.
+    def __init__(self):
+        self.a = 123    # OK to access directly
+        self._a = 456   # should be considered protected
+        self.__a = 789  # considered private, name mangled , more secure Data
+    def getSecureData(self):
+        print("I am a secure data",self.__a)
+    def _getProtectedData(self):
+        print ("inside single underscore")
+        print(self._a)
+    # Below method (which is inside the class) is considered as Private method(used double underscore
+    # before the method name.
+    def __getMoreSecureDataMethod(self):
+        print(self.__a)
+
+if __name__ == '__main__':
+    # Lets first try to create an object of SampleClass.
+    objOfSampleClass = SampleClass() # object will get created here.
+    m = SampleClass() # creating another object for the same class (reason : n number of obj can be created for a class)
+    # just for your reference.
+    print(objOfSampleClass.b)
+    print(objOfSampleClass._b)
+    # If you want to bring private value/variable outside the class, normally its not possible.
+    # Below is going to throw an error (uncomment and execute it)
+    #print(objOfSampleClass.__b)
+    # But if you do still, want to bring the value outside the class. then follow the below line of code.
+    # using objOfSampleClass, lets call two global variables
+    print(objOfSampleClass.globalNumVariable) # 3691
+    print(objOfSampleClass.globalStringVariable) #
+    # At the time of object creation, we are creating three variables Isn't it? (check __init__ method())
+    # lets call those variable values one by one.
+    print(objOfSampleClass.a)  # output is 123
+    print(objOfSampleClass._a)  # output is 456
+    #print(objOfSampleClass.__a)  # uncomment and run this line, it will throw an error.
+    # below line contains getSecureData() - which is a public method, inside this method we are printing __a value,
+    print("calling a method: ", objOfSampleClass.getSecureData())
+    print("calling a protected method: ", objOfSampleClass._getProtectedData())
+    # # Below method has __ [two underscores], which is considered as private method here. So it cannot be called outside the class.
+    # Uncomment the below line and test.
+    # print("calling a method: ", m.__getMoreSecureData())
+
+    # here we are tyring to get the method out, but it's not possible.
+    #print("calling a method: ", m._SampleClass__getMoreSecureData())
+
+
+
+
+
+
+
+
+import pymysql
+conn = pymysql.connect(host="localhost",port=3306,user="root",password="Admin@123")
+
+
+
+df = pd.read_sql("select * from employees",conn)
+
+
+
+
+
+
+### method2
+
+from sqlalchemy import create_engine
+from urllib.parse import quote_plus
+password = quote_plus("Admin@123")
+print(password)
+# "database:libname://username:password@hostname:portnumber/datbase"
+connection_string ="mysql+pymysql://root:Admin%40123@localhost:3306/empdb"
+engine = create_engine(connection_string)
+
+
+
+
+
+
+df = pd.read_sql("select * from employees",engine)
+df
+
+
+
+
+#####################################################################################
+
+
+
+
+
+#######################
+def first(msg):
+    print(msg)
+
+
+first("Hello")
+
+second = first
+second("Hello")
+
+
+print(id(second))
+print(id(first))
+########################
+
+
+
+
+
+
+########################
+#a function can return another function.
+#is_returned() is a nested function which is defined and returned each time we call is_called().
+def is_called():
+    def is_returned():
+        print("Hello")
+    return is_returned
+
+new = is_called()
+# Outputs "Hello"
+new()
+########################
+
+
+
+
+
+
+#########################################################################
+#Basically, a decorator takes in a function, 
+#adds some functionality and returns it.
+def make_pretty(func):
+    def inner():
+        print("I got decorated")
+        func()
+    return inner
+
+
+def ordinary():
+    print("I am ordinary")
+
+
+#make_pretty() is a decorator
+# let's decorate this ordinary functio
+pretty = make_pretty(ordinary)
+pretty()
+
+#The function ordinary() got decorated and the returned function was given the name pretty.
+#We can see that the decorator function added some new functionality to the original function
+#The decorator acts as a wrapper. 
+#########################################################################
+
+
+
+
+#########################################################################
+#Python has a syntax to simplify this.
+#We can use the @ symbol along with the name of the decorator function and place it above the definition of the function to be decorated.
+
+def make_pretty(func):
+    def inner():
+        print("I got decorated")
+        func()
+    return inner
+
+@make_pretty
+def ordinary():
+    print("I am ordinary")
+
+ordinary()
+#########################################################################
+
+
+
+
+
+#parameters of the nested inner() function inside the decorator is the same as the parameters of functions it decorates. 
+def smart_divide(func):
+    def inner(a, b):
+        print("I am going to divide", a, "and", b)
+        if b == 0:
+            print("Whoops! cannot divide")
+            return
+
+        return func(a, b)
+    return inner
+
+
+@smart_divide
+def divide(a, b):
+    print(a/b)
+    
+    
+divide(2,5)
+divide(2,0)
+
+
+##########################
+
+
+
+
+
+def star(func):
+    def inner(*args, **kwargs):
+        print("*" * 30)
+        func(*args, **kwargs)
+        print("*" * 30)
+    return inner
+
+def percent(func):
+    def inner(*args, **kwargs):
+        print("%" * 30)
+        func(*args, **kwargs)
+        print("%" * 30)
+    return inner
+
+@star
+@percent
+def printer(msg):
+    print(msg)
+
+printer("Hello")
+
+
+
+
+##############################
+
+
+
+import time
+def simple_decorator(fn):
+    def wrapper():
+        # adding behaviour before execution
+        print("before execution")
+        fn() 
+        # adding behaviour after execution
+        print("after execution")
+    return wrapper
+
+
+@simple_decorator
+def lazy_function():
+    print("zz...")
+    time.sleep(2)
+
+
+# Calling the lazy function to see the result
+lazy_function()
+
+
+
+
+
+
+
+##################################################
+
+
+
+import time
+
+# Define the timing decorator
+def timing_decorator(func):
+    def wrapper(*args, **kwargs):
+        # Record the start time
+        start_time = time.time()
+        # Call the original function
+        result = func(*args, **kwargs)
+        # Record the end time
+        end_time = time.time()
+        # Calculate the time taken and print it
+        elapsed_time = end_time - start_time
+        print(f"Function '{func.__name__}' took {elapsed_time:.4f} seconds to execute.")
+        return result
+    return wrapper
+
+# Use the timing decorator on a function that reads a file and simulates a delay
+@timing_decorator
+def long_running_task(filename, delay_seconds):
+    """Function that reads a file and simulates a long-running task with a delay."""
+    with open(filename, 'r') as file:
+        content = file.read()[0:100]
+    return content
+
+
+# Example usage
+file_content = long_running_task('employees.csv', 3)
+
+if file_content is not None:
+    print("File Content:")
+    print(file_content)
+    
+    
+    
+    
+###############################
+
+
+
+
+
+
+# GET All Products
+def get_all_products():
+    response = requests.get("https://fakestoreapi.com/products")
+    print("GET All Products:")
+    print(response.json())
+
+
+
+
+
+
+
+##################################### display all products ##################
+
+ import requests
+import json
+# GET All Products
+def get_all_products():
+    response = requests.get("https://fakestoreapi.com/products")
+    print("GET All Products:")
+    data = response.json()
+    for item in data:
+        print(item['title'])
+        print("-----------")
+
+
+get_all_products()
+
+
+
+
+
+####################### insert new product ( post) ###########################
+
+import requests
+
+# POST Create a Product
+def create_product():
+    data = {
+        "title": "test product",
+        "price": 13.5,
+        "description": "fancy item",
+        "image": "https://www.abc.com",
+        "category": "electronic"
+    }
+    response = requests.post("https://fakestoreapi.com/products", json=data)
+    print("POST Create a Product:")
+    print(response.json())
+
+
+create_product()
+
+
+
+
+################################ updating the existing product ( put ) #############
+
+
+
+import requests
+# PUT Update a Product
+def update_product(product_id):
+    data = {
+        "title": "updated product",
+        "price": 15.0,
+        "description": "updated description",
+        "image": "https://i.pravatar.cc",
+        "category": "electronic"
+    }
+    response = requests.put(f"https://fakestoreapi.com/products/{product_id}", json=data)
+    print("PUT Update a Product:")
+    print(response.json())
+
+
+update_product(1)
+
+
+#####################################
+
+;
+import requests
+# DELETE a Product
+def delete_product(product_id):
+    response = requests.delete(f"https://fakestoreapi.com/products/{product_id}")
+    print("DELETE a Product:")
+    print(response.status_code)
+    print(response)
+
+
+delete_product(1)
+
+
+##################################
+
+
+
+
+
+
+
+
+https://survey.zohopublic.com/zs/4OD40a
+
+##############################################################
+
+http://192.168.1.7:5000/employees
+
+
+
+
+-----------------------------------------------
+inserting all the records from employees.csv
+-------------------------------------------
+
+import pymysql
+import pandas as pd
+
+# Step 1: Load the CSV file into a DataFrame
+file_path = 'employees.csv'  # Path to the CSV file
+data = pd.read_csv(file_path)
+
+# Step 2: Connect to MySQL database
+connection = pymysql.connect(
+    host='localhost',      # Replace with your host name
+    user='root',  # Replace with your MySQL username
+    password='Admin@123',  # Replace with your MySQL password
+    database='empdb'   # Replace with your database name
+)
+
+# Step 3: Create a cursor object
+cursor = connection.cursor()
+
+# Step 4: Create table if not exists (Optional, for safety)
+create_table_query = """
+CREATE TABLE IF NOT EXISTS employees (
+    age INT,
+    workclass VARCHAR(255),
+    fnlwgt INT,
+    education VARCHAR(255),
+    educational_num INT,
+    marital_status VARCHAR(255),
+    occupation VARCHAR(255),
+    relationship VARCHAR(255),
+    race VARCHAR(255),
+    gender VARCHAR(50),
+    capital_gain INT,
+    capital_loss INT,
+    hours_per_week INT,
+    native_country VARCHAR(255),
+    income VARCHAR(50)
+);
+"""
+cursor.execute(create_table_query)
+connection.commit()
+
+# Step 5: Prepare the insert query
+insert_query = """
+INSERT INTO employees (
+    age, workclass, fnlwgt, education, educational_num, marital_status, 
+    occupation, relationship, race, gender, capital_gain, capital_loss, 
+    hours_per_week, native_country, income
+) VALUES (
+    %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
+);
+"""
+
+# Step 6: Insert records into the database
+for index, row in data.iterrows():
+    cursor.execute(insert_query, tuple(row))
+    connection.commit()
+
+# Step 7: Close the cursor and connection
+cursor.close()
+connection.close()
+
+print("Data inserted successfully!")
+
+
+
+
+
+-----------------------------------------------------------
+creating rest api
+-----------------------------------------------------------
+
+# creating rest apis
+# flask
+# fastapi
+# django
+
+
+# creating rest apis
+# source can be database - our source
+# excel
+# json file
+# dummy dictionary in the program
+
+
+from flask import Flask, request, jsonify
+import pymysql
+
+app = Flask(__name__)
+
+# Database configuration
+db_config = {
+    'host': 'localhost',
+    'user': 'root',
+    'password': 'Admin@123',
+    'database': 'empdb'
+}
+
+# Establish database connection
+def db_connection():
+    conn = pymysql.connect(**db_config)
+    return conn
+
+# GET endpoint to fetch all employees
+@app.route('/employees', methods=['GET'])
+def get_employees():
+    conn = db_connection()
+    cursor = conn.cursor(pymysql.cursors.DictCursor)
+    cursor.execute("SELECT * FROM employees limit 5;")
+    employees = cursor.fetchall()
+    conn.close()
+    return jsonify(employees)
+
+# GET endpoint to fetch a single employee by ID
+@app.route('/employee/<int:id>', methods=['GET'])
+def get_employee(id):
+    conn = db_connection()
+    cursor = conn.cursor(pymysql.cursors.DictCursor)
+    cursor.execute("SELECT * FROM employees WHERE age = %s;", (id,))
+    employee = cursor.fetchone()
+    conn.close()
+    if employee:
+        return jsonify(employee)
+    else:
+        return jsonify({'error': 'Employee not found'}), 404
+
+# POST endpoint to add a new employee
+@app.route('/employee', methods=['POST'])
+def add_employee():
+    new_employee = request.json
+    conn = db_connection()
+    cursor = conn.cursor()
+    cursor.execute("""
+        INSERT INTO employees (age, workclass, fnlwgt, education, educational_num, marital_status, 
+        occupation, relationship, race, gender, capital_gain, capital_loss, 
+        hours_per_week, native_country, income) 
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);
+        """, (
+        new_employee['age'], new_employee['workclass'], new_employee['fnlwgt'], new_employee['education'],
+        new_employee['educational_num'], new_employee['marital_status'], new_employee['occupation'],
+        new_employee['relationship'], new_employee['race'], new_employee['gender'], new_employee['capital_gain'],
+        new_employee['capital_loss'], new_employee['hours_per_week'], new_employee['native_country'],
+        new_employee['income']
+    ))
+    conn.commit()
+    conn.close()
+    return jsonify({'message': 'Employee added successfully!'}), 201
+
+# PUT endpoint to update an existing employee
+@app.route('/employee/<int:id>', methods=['PUT'])
+def update_employee(id):
+    updated_employee = request.json
+    conn = db_connection()
+    cursor = conn.cursor()
+    cursor.execute("""
+        UPDATE employees SET 
+        age = %s, workclass = %s, fnlwgt = %s, education = %s, educational_num = %s, marital_status = %s,
+        occupation = %s, relationship = %s, race = %s, gender = %s, capital_gain = %s, 
+        capital_loss = %s, hours_per_week = %s, native_country = %s, income = %s
+        WHERE id = %s;
+        """, (
+        updated_employee['age'], updated_employee['workclass'], updated_employee['fnlwgt'],
+        updated_employee['education'], updated_employee['educational_num'], updated_employee['marital_status'],
+        updated_employee['occupation'], updated_employee['relationship'], updated_employee['race'],
+        updated_employee['gender'], updated_employee['capital_gain'], updated_employee['capital_loss'],
+        updated_employee['hours_per_week'], updated_employee['native_country'], updated_employee['income'], id
+    ))
+    conn.commit()
+    conn.close()
+    return jsonify({'message': 'Employee updated successfully!'})
+
+# DELETE endpoint to delete an employee by ID
+@app.route('/employee/<int:id>', methods=['DELETE'])
+def delete_employee(id):
+    conn = db_connection()
+    cursor = conn.cursor()
+    cursor.execute("DELETE FROM employees WHERE id = %s;", (id,))
+    conn.commit()
+    conn.close()
+    return jsonify({'message': 'Employee deleted successfully!'})
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000,debug = True)
+
+
+
+###################################################################################
+######################## consuming rest apis ###################################
+####################################################################################
+
+#### displaying all the records########  requests.get()
+
+import requests
+import json
+
+# Define the base URL
+BASE_URL = "http://192.168.1.7:5000/"
+
+
+
+# GET request to fetch all employees
+response = requests.get(f"{BASE_URL}/employees")
+print("All Employees:", response.json())
+
+
+
+############################ inserting record ##### request.post()
+
+
+import requests
+import json
+
+# Define the base URL
+BASE_URL = "http://192.168.1.7:5000/"
+
+
+# GET request to fetch a single employee by ID
+response = requests.get(f"{BASE_URL}/employee/1")
+print("Employee with ID 1:", response.json())
+
+# POST request to add a new employee
+new_employee = {
+    'age': 30,
+    'workclass': 'Private',
+    'fnlwgt': 123456,
+    'education': 'Masters',
+    'educational_num': 14,
+    'marital_status': 'Never-married',
+    'occupation': 'Software Developer',
+    'relationship': 'Not-in-family',
+    'race': 'White',
+    'gender': 'Male',
+    'capital_gain': 0,
+    'capital_loss': 0,
+    'hours_per_week': 40,
+    'native_country': 'United States',
+    'income': '>50K'
+}
+response = requests.post(f"{BASE_URL}/employee", json=new_employee)
+print("Add New Employee Response:", response.json())
+
+#####################################################
+
+
+
+############### deleting one emp record ###################
+
+import requests
+import json
+
+# Define the base URL
+BASE_URL = "http://192.168.1.7:5000/"
+
+
+
+# DELETE request to delete an employee by ID
+response = requests.delete(f"{BASE_URL}/employee/1")
+print("Delete Employee Response:", response.json())
+
+####################################################
+
+
+
+
+ 
